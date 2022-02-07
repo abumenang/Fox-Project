@@ -1,0 +1,12 @@
+Answers to question 1 to 4 answered in the script.
+
+5. Describe how your approach might change when operating on a significantly large log file, 3GiB in size.
+
+when dealing with large log files, the approach would differ for different use cases but from a general point of view a faster workflow model which is capable of finishing the process as soon as possible and reducing time should be implemented. Code optimization is also a considerable approach.In order to optimize
+codes for larger log file handling the different data modules available in python can be incorporated into the code so as to increase the performance. 
+So when dealing with larger files the fastest approach will be to aggregate the file content as the first step and then further process the content by sorting, rearranging and then finally grouping the records based on various entities.
+
+6. Describe how you might change your design with the added requirement of distributing this as a robust command line tool for use by other team members.
+
+To satisfy the given requirement, the code can be made into small modules to make it flexible against the changing or varying requirements in the flow. To make the code work flow in robust format, it can be executed against cli modules in a python environment. To provide the specific fields to execute the commands, user can initiate the execution process by running the driver file which can take the inputs from the user and pass them to declared modules for further processing and then control can be taken by the custom modules. The results will be shown on the screen when the entire process is completed. 
+The code can also be split into different classes and can be called into programs as per the requirement. The instances can also be constructed in different Testcases in oop.
